@@ -10,7 +10,7 @@
     "dev": "webpack --config webpack/webpack.config.dev.js",
     "start": "npm run clear && npm run django-tailwind-watch & npm run dev",
     "prod": "webpack --config webpack/webpack.config.prod.js",
-    "build": "cross-env NODE_ENV=production npm run clear && npm run django-tailwind && npm run build"
+    "build": "cross-env NODE_ENV=production npm run clear && npm run django-tailwind && npm run prod"
   },
   "keywords": [],
   "author": "",

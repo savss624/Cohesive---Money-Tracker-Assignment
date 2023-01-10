@@ -7,7 +7,7 @@ WORKDIR /front-end
 ARG DEV=false
 RUN yarn install && \
     if [ $DEV = "false" ]; \
-    then npm run prod ; \
+    then npm run build ; \
     fi && \
     adduser \
     --disabled-password \

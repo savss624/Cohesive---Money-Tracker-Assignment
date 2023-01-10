@@ -16,7 +16,6 @@ Including another URLconf
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from django.contrib import admin
 from django.urls import path, include
-from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -28,6 +27,5 @@ urlpatterns = [
     ),
     path("__debug__/", include("debug_toolbar.urls")),
     path("api/user/", include("user.urls")),
-    path("", views.View.as_view()),
-    path("api/", views.Api),
+    path("money-tracker/", include("money_tracker.urls")),
 ]

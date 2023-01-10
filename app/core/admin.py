@@ -48,3 +48,6 @@ class UserAdmin(BaseUserAdmin):
 
 
 admin.site.register(models.User, UserAdmin)
+admin.site.register(models.Group)
+admin.site.register(models.GroupBalances)
+admin.site.register(models.Transaction)
