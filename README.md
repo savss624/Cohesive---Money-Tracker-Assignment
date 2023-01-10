@@ -5,9 +5,18 @@
 Pre-requisite: Docker Installed
 
 ```
+git clone https://github.com/savss624/Cohesive---Money-Tracker-Assignment.git
+cd Cohesive---Money-Tracker-Assignment/
 docker-compose build
 docker-compose up
 ```
+
+Know Error: sh: webpack: not found
+if the above error pop up then run
+```
+docker-compose run --rm front-end sh -c "yarn install"
+```
+trying to figure out why dockerfile not creating node_modules.
 
 ### Major Features Implemented
 
